@@ -1,4 +1,5 @@
-![Novus Logo](-)
+![novus white text](https://github.com/user-attachments/assets/48da7957-85d7-4f63-92b4-16c964a8e6ce)
+
 Welcome to the home and official public repository of zekkie's **Novus**, a open-source [digital audio workstation](https://en.m.wikipedia.org/wiki/Digital_audio_workstation) made with Python. 
 
 **Check out [the official website](https://novus.zekkie.dev/) to learn more!**
@@ -6,7 +7,7 @@ Welcome to the home and official public repository of zekkie's **Novus**, a open
 ## Features
 - **A basic, easy-to-use, modern and customizable user interface** that's inspired by the likes of the world's most popular audio workstations
 - **Full VST support** like other DAWs for synths and mixer effects
-- **500 track support** as well as multiple mixers for each plugin and audio clip
+- **Multi track support** as well as multiple mixers for each plugin and audio clip
 - **DJ Mode** for mixing songs, fading in/out and much more
 - **Audio Clip Editor** for purposes of editing a single file 
 - **Built-in file explorer** for easy access to the files you really need
