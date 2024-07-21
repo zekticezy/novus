@@ -1,0 +1,15 @@
+Novus
+Logos: https://drive.google.com/drive/folders/1DPJimNttjiZan4Ghx5nEZSBICf2ZlO1Z
+Color Codes
+Dark Mode
+#141414 - Dark Mode 1
+#202020 - Dark Mode 2
+#1a1a1a - Dark Mode 3
+
+Light Mode
+rgb(130, 128, 128) - Light Mode 1
+rgb(165, 165, 165) - Light Mode 2
+rgb(191, 191, 191) - Light Mode 3
+
+Track Colors
+
