@@ -1,7 +1,3 @@
-# This file is a cruical part of Novus. It is used for the Project window you see when one of your .nvp files are active in the program. 
-# Do not change anything here if you don't know what you're doing!
-# - zekkie
-
 import tkinter as tk
 from tkinter import font as tkfont
 from PIL import Image, ImageTk
@@ -22,7 +18,7 @@ class DAWWindow(tk.Tk):
         self.load_custom_font()
         self.initUI()
 
-        self.copy_folders_to_documents()
+        self.copy_folders_to_documents()  # Call method here
 
         self.folder_mapping = {
             "Sounds": "Sounds",
@@ -35,7 +31,7 @@ class DAWWindow(tk.Tk):
             "Audio Recordings": "Audio Recordings",
             "Projects": "Projects"
         }
-    
+
     def load_custom_font(self):
         font_path = os.path.join('cdn', 'font', 'Inter', 'Inter-VariableFont_slnt,wght.ttf')
         if os.path.exists(font_path):
@@ -43,7 +39,7 @@ class DAWWindow(tk.Tk):
                 self.custom_font = tkfont.Font(family="Inter", size=9, weight="bold")
             except tk.TclError:
                 print("Failed to load custom font.")
-    
+
     def initUI(self):
         self.canvas = tk.Canvas(self, bg='#828080', bd=0, highlightthickness=0)
         self.canvas.pack(fill=tk.BOTH, expand=True)
@@ -135,7 +131,7 @@ class DAWWindow(tk.Tk):
 
         self.canvas.create_rectangle(file_explorer_x, file_explorer_y, file_explorer_x + file_explorer_width, file_explorer_y + file_explorer_height, fill='#A5A5A5', outline='')
 
-        folder_path = os.path.join('App Preferences', 'Explorer', 'Explorer Folders', self.folder_mapping.get(folder_name, ''))
+        folder_path = os.path.join('C:/Users', os.getlogin(), 'Documents', 'Novus', self.folder_mapping.get(folder_name, ''))
         if not os.path.exists(folder_path):
             return
 
@@ -189,24 +185,49 @@ class DAWWindow(tk.Tk):
             try:
                 new_path = os.path.join(os.path.dirname(file_path), new_name)
                 os.rename(file_path, new_path)
-                self.display_files(os.path.basename(os.path.dirname(file_path)))
+                self.display_files(os.path.basename(new_path))
             except Exception as e:
                 print(f"Error renaming file: {e}")
 
     def delete_file(self, file_path):
-        if simpledialog.askyesno("Delete File", "Are you sure you want to delete this file?"):
-            os.remove(file_path)
-            self.display_files(os.path.basename(os.path.dirname(file_path)))
+        confirm = simpledialog.askstring("Delete File", "Are you sure you want to delete this file? (yes/no)")
+        if confirm.lower() == 'yes':
+            try:
+                os.remove(file_path)
+                self.display_files(os.path.basename(file_path))
+            except Exception as e:
+                print(f"Error deleting file: {e}")
+
+
 
     def copy_folders_to_documents(self):
-        source_folder = os.path.join('App Preferences', 'Explorer', 'Explorer Folders')
-        documents_folder = os.path.expanduser("~/Documents/Novus")
+        source = os.path.join('App Preferences', 'Explorer', 'Explorer Folders Template')
+        destination = os.path.join(os.path.expanduser('~'), 'Documents', 'Novus')
 
-        if os.path.exists(source_folder):
-            if not os.path.exists(documents_folder):
-                shutil.copytree(source_folder, documents_folder)
-            else:
-                print("Destination folder already exists.")
+        print(f"Source folder: {source}")
+        print(f"Destination folder: {destination}")
+
+        # Ensure destination does not already exist
+        if os.path.exists(destination):
+            print(f"Removing existing destination folder: {destination}")
+            shutil.rmtree(destination)
+
+        try:
+            if not os.path.exists(source):
+                print(f"Source folder does not exist: {source}")
+                return
+
+            print(f"Copying from {source} to {destination}")
+            shutil.copytree(source, destination)
+            print(f"Successfully copied from {source} to {destination}")
+
+        except PermissionError as e:
+            print(f"Permission error: {e}")
+        except FileNotFoundError as e:
+            print(f"File not found error: {e}")
+        except Exception as e:
+            print(f"An unexpected error occurred: {e}")
+
 
 if __name__ == "__main__":
     app = DAWWindow()
