@@ -1,10 +1,14 @@
+# This file is a cruical part of Novus. It is used for the Project window you see when one of your .nvp files are active in the program. 
+# Do not change anything here if you don't know what you're doing!
+# - zekkie
+
 import tkinter as tk
 from tkinter import font as tkfont
 from PIL import Image, ImageTk
 import os
 import shutil
 import subprocess
-import tkinter.simpledialog as simpledialog  # Import this for simpledialog
+import tkinter.simpledialog as simpledialog
 
 class DAWWindow(tk.Tk):
     def __init__(self):
@@ -18,10 +22,8 @@ class DAWWindow(tk.Tk):
         self.load_custom_font()
         self.initUI()
 
-        # Copy folder on launch
         self.copy_folders_to_documents()
 
-        # Folder path mapping
         self.folder_mapping = {
             "Sounds": "Sounds",
             "Instruments": "Instruments",
@@ -127,12 +129,10 @@ class DAWWindow(tk.Tk):
         file_explorer_width = 272
         file_explorer_height = 940
 
-        # Clear previous files in the file explorer
         for widget in self.canvas.winfo_children():
             if widget.winfo_x() >= file_explorer_x:
                 widget.destroy()
 
-        # Ensure the file explorer area remains fixed in size
         self.canvas.create_rectangle(file_explorer_x, file_explorer_y, file_explorer_x + file_explorer_width, file_explorer_y + file_explorer_height, fill='#A5A5A5', outline='')
 
         folder_path = os.path.join('App Preferences', 'Explorer', 'Explorer Folders', self.folder_mapping.get(folder_name, ''))
@@ -142,24 +142,20 @@ class DAWWindow(tk.Tk):
         files = os.listdir(folder_path)
         y_position = file_explorer_y
 
-        # Define audio file extensions
         audio_extensions = ('.mp3', '.m4a', '.wav', '.flac', '.aac', '.wma', '.mp4', '.aiff')
 
         for file in files:
             file_path = os.path.join(folder_path, file)
-            # Determine icon based on file extension
             if file.lower().endswith(audio_extensions):
                 icon_path = os.path.join('cdn', 'img', 'icons', 'Explorer', 'audiofile.png')
             else:
                 icon_path = None
 
-            # Create label for file
             label = tk.Label(self.canvas, text=file, font=self.custom_font, bg='#A5A5A5', fg='#FFFFFF')
             label.place(x=file_explorer_x, y=y_position, anchor='nw')
             label.bind("<Button-3>", lambda e, p=file_path: self.show_context_menu(e, p))
             y_position += 18
 
-            # Add icon if available
             if icon_path:
                 self.set_button_icon(label, icon_path, (16, 16))
 
@@ -181,12 +177,10 @@ class DAWWindow(tk.Tk):
         context_menu.post(event.x_root, event.y_root)
 
     def open_in_windows_explorer(self, file_path):
-        # Get the directory containing the file
         folder_path = os.path.dirname(file_path)
         if os.name == 'nt':
             subprocess.run(['explorer', folder_path])
         elif os.name == 'posix':
-            # For Unix-based systems, you might use a different method, e.g., `xdg-open`
             subprocess.run(['xdg-open', folder_path])
 
     def rename_file(self, file_path):
@@ -210,14 +204,9 @@ class DAWWindow(tk.Tk):
 
         if os.path.exists(source_folder):
             if not os.path.exists(documents_folder):
-                os.makedirs(documents_folder)
-            for folder in os.listdir(source_folder):
-                src_path = os.path.join(source_folder, folder)
-                dest_path = os.path.join(documents_folder, folder)
-                if os.path.isdir(src_path):
-                    shutil.copytree(src_path, dest_path, dirs_exist_ok=True)
-        else:
-            print(f"Source folder '{source_folder}' does not exist.")
+                shutil.copytree(source_folder, documents_folder)
+            else:
+                print("Destination folder already exists.")
 
 if __name__ == "__main__":
     app = DAWWindow()
