@@ -4,7 +4,7 @@ Welcome to the home and official public repository of zekkie's **Novus**, a open
 
 **Check out [the official website](https://novus.zekkie.dev/) to learn more!**
 
-## Features
+## PLANNED Features
 - **A basic, easy-to-use, modern and customizable user interface** that's inspired by the likes of the world's most popular audio workstations
 - **Full VST support** like other DAWs for synths and mixer effects
 - **Multi track support** as well as multiple mixers for each plugin and audio clip
