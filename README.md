@@ -1,10 +1,10 @@
 ![novus white text](https://github.com/user-attachments/assets/48da7957-85d7-4f63-92b4-16c964a8e6ce)
 
-Welcome to the home and official public repository of zekkie's **Novus**, a open-source [digital audio workstation](https://en.m.wikipedia.org/wiki/Digital_audio_workstation) made with Python. 
+Welcome to the home and official public repository of zekkie's **Novus**, a open-source [digital audio workstation](https://en.m.wikipedia.org/wiki/Digital_audio_workstation) made with C. 
 
 **Check out [the official website](https://novus.zekkie.dev/) to learn more!**
 
-## Features
+## WIP Features
 - **A basic, easy-to-use, modern and customizable user interface** that's inspired by the likes of the world's most popular audio workstations
 - **Full VST support** like other DAWs for synths and mixer effects
 - **Multi track support** as well as multiple mixers for each plugin and audio clip
@@ -15,16 +15,17 @@ Welcome to the home and official public repository of zekkie's **Novus**, a open
 - **Easy mixer presets** you can share as a file across the Internet to help others and their projects, whether it's for vocals or sounds. 
 - **Video tutorials** built-in to the software to familiarize yourself with everything
 - **Dark Mode** support that syncs with your operating system
+- A **Built-in audio & MIDI** recorder for your studio to always be in session
+- **FULL MIDI support**
 
-Check out [here](https://novus.zekkie.dev/features) to take a look at Novus' best features.
+Check out [the website](https://novus.zekkie.dev/#features) to take a look at Novus' best features.
 
 ## Screenshots
+empty :(
 
 
 ## Planned Features
 - Built-in VSTs that ship with the app, ready for use
-- Built-in audio recorder
-- MIDI support
 
 ## Contribute
 You're already here, at our repository! You can clone it and make changes over at our `suggestions` branch and we'd love to check out what you have to bring to the table for Novus! 
@@ -37,7 +38,7 @@ Novus is available for Windows *(.exe)*, macOS *(.app)* and Linux *(.deb, .rpm &
 ### Updates
 Novus has a built-in auto-updater that'll check GitHub every launch to let you know if there's a new version available. 
 
-Last update: 21 Jul 2024. Check the [releases]() for patch notes and more info.
+Last update: dd/mm/yy. Check the [releases](https://github.com/zekticezy/novus/releases/) for patch notes and more info.
 
 ## Support Development
 Novus was built by me **solo**, and I want my creation to be **free**, **forever**. So, if you're interested, you can support me, my family and development by [donating here](). You don't have to, but it's be really awesome if you did! 
