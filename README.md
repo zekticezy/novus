@@ -16,7 +16,7 @@ Welcome to the home and official public repository of zekkie's **Novus**, a open
 - **Video tutorials** built-in to the software to familiarize yourself with everything
 - **Dark Mode** support that syncs with your operating system
 
-Check out [the website](https://novus.zekkie.dev/) to take a look at Novus' best features.
+Check out [the website](https://novus.zekkie.dev/ïndex.html#features) to take a look at Novus' best features.
 
 ## Screenshots
 empty :(
