@@ -4,7 +4,7 @@ Welcome to the home and official public repository of zekkie's **Novus**, a open
 
 **Check out [the official website](https://novus.zekkie.dev/) to learn more!**
 
-## PLANNED Features
+## WIP Features
 - **A basic, easy-to-use, modern and customizable user interface** that's inspired by the likes of the world's most popular audio workstations
 - **Full VST support** like other DAWs for synths and mixer effects
 - **Multi track support** as well as multiple mixers for each plugin and audio clip
@@ -15,6 +15,8 @@ Welcome to the home and official public repository of zekkie's **Novus**, a open
 - **Easy mixer presets** you can share as a file across the Internet to help others and their projects, whether it's for vocals or sounds. 
 - **Video tutorials** built-in to the software to familiarize yourself with everything
 - **Dark Mode** support that syncs with your operating system
+- A **Built-in audio & MIDI** recorder for your studio to always be in session
+- **FULL MIDI support**
 
 Check out [the website](https://novus.zekkie.dev/#features) to take a look at Novus' best features.
 
@@ -24,8 +26,6 @@ empty :(
 
 ## Planned Features
 - Built-in VSTs that ship with the app, ready for use
-- Built-in audio recorder
-- MIDI support
 
 ## Contribute
 You're already here, at our repository! You can clone it and make changes over at our `suggestions` branch and we'd love to check out what you have to bring to the table for Novus! 
