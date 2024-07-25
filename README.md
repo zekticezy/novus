@@ -37,7 +37,7 @@ Novus is available for Windows *(.exe)*, macOS *(.app)* and Linux *(.deb, .rpm &
 ### Updates
 Novus has a built-in auto-updater that'll check GitHub every launch to let you know if there's a new version available. 
 
-Last update: 21 Jul 2024. Check the [releases]() for patch notes and more info.
+Last update: dd/mm/yy. Check the [releases]() for patch notes and more info.
 
 ## Support Development
 Novus was built by me **solo**, and I want my creation to be **free**, **forever**. So, if you're interested, you can support me, my family and development by [donating here](). You don't have to, but it's be really awesome if you did! 
