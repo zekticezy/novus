@@ -1,4 +1,0 @@
-This file is used to let Novus know if the App Preferences\Explorer\Explorer Folders Template folder has been copied to your Documents\Novus folder. 
-Do not touch anything in here, unless you want to reset your Documents\Novus completely, then set "true;" to "false;" and restart Novus, which will reset the folder completely.
-
-copiedTemplateFolder = false;

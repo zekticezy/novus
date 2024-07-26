@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "main.c",
+                "-o", "main",
+                "-I/path/to/nuklear",
+                "-I/path/to/glfw/include",
+                "-L/path/to/glfw/lib",
+                "-lglfw3",
+                "-framework", "OpenGL",
+                "-lGLEW",
+                "-ldl"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

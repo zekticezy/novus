@@ -30,6 +30,14 @@ empty :(
 ## Contribute
 You're already here, at our repository! You can clone it and make changes over at our `suggestions` branch and we'd love to check out what you have to bring to the table for Novus! 
 
+### Compiler
+We're using the GCC Compiler for this. To download it, get [MSYS2](https://www.msys2.org/). Once installed open **MSYS2 MINGW64** and run the following command:
+```sh
+pacman -S mingw-w64-x86_64-gcc
+```
+
+Wait for installation to run and GCC is ready to compile.
+
 ## Download
 Check out [novus.zekkie.dev](https://novus.zekkie.dev/downloads) to download beta and official releases.
 
