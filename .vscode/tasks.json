@@ -8,13 +8,14 @@
             "args": [
                 "main.c",
                 "-o", "main",
-                "-I/path/to/nuklear",
-                "-I/path/to/glfw/include",
-                "-L/path/to/glfw/lib",
+                "-I./Modules/GLFW/H",
+                "-I./Modules/Nuklear",
+                "-L./Modules/GLFW/LIB",
                 "-lglfw3",
-                "-framework", "OpenGL",
-                "-lGLEW",
-                "-ldl"
+                "-lgdi32",  // Required for GLFW on Windows
+                "-lopengl32", // OpenGL library on Windows
+                "-lm",  // Link math library
+                "-ldl"  // Link dynamic library loader
             ],
             "group": {
                 "kind": "build",

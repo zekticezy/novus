@@ -4,8 +4,8 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/msys64/mingw64/include/GLFW",
-                "./Modules/Nuklear"
+                "${workspaceFolder}/Modules/GLFW/H",
+                "${workspaceFolder}/Modules/Nuklear"
             ],
             "defines": [
                 "_DEBUG",

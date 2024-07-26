@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <GLFW/glfw3.h>
-#include "Modules/nuklear.h"
-#include "Modules/nuklear_glfw_gl4.h"
+#include "./Modules/Nuklear/nuklear.h"
+#include "./Modules/Nuklear/nuklear_glfw_gl4.h"
 
 #define WINDOW_WIDTH 1920
 #define WINDOW_HEIGHT 1080
+#define MAX_VERTEX_BUFFER 512 * 1024
+#define MAX_ELEMENT_BUFFER 128 * 1024
 
 int main(void) {
     GLFWwindow *win;
@@ -32,7 +34,7 @@ int main(void) {
     glfwSetWindowSize(win, WINDOW_WIDTH, WINDOW_HEIGHT);
 
     /* Initialize Nuklear */
-    ctx = nk_glfw3_init(win, NK_GLFW3_INSTALL_CALLBACKS);
+    ctx = nk_glfw3_init(win, NK_GLFW3_INSTALL_CALLBACKS, NULL);  // Added NULL for the context
 
     /* Load Fonts: if none of these are loaded a default font will be used */
     /* Load Cursor: if you uncomment cursor loading please hide the cursor */
@@ -62,8 +64,9 @@ int main(void) {
         nk_end(ctx);
 
         /* Draw */
-        glfwGetWindowSize(win, &WINDOW_WIDTH, &WINDOW_HEIGHT);
-        glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
+        int win_width, win_height;
+        glfwGetWindowSize(win, &win_width, &win_height);
+        glViewport(0, 0, win_width, win_height);
         glClear(GL_COLOR_BUFFER_BIT);
         nk_glfw3_render(NK_ANTI_ALIASING_ON, MAX_VERTEX_BUFFER, MAX_ELEMENT_BUFFER);
         glfwSwapBuffers(win);
