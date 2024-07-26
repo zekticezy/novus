@@ -1,6 +1,6 @@
 ![novus white text](https://github.com/user-attachments/assets/48da7957-85d7-4f63-92b4-16c964a8e6ce)
 
-Welcome to the home and official public repository of zekkie's **Novus**, a open-source [digital audio workstation](https://en.m.wikipedia.org/wiki/Digital_audio_workstation) made with C. 
+Welcome to the home and official public repository of zekkie's **Novus**, a open-source [digital audio workstation](https://en.m.wikipedia.org/wiki/Digital_audio_workstation) made with C, C++ & Python. 
 
 **Check out [the official website](https://novus.zekkie.dev/) to learn more!**
 
