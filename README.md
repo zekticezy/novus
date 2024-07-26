@@ -48,6 +48,11 @@ Novus has a built-in auto-updater that'll check GitHub every launch to let you k
 
 Last update: dd/mm/yy. Check the [releases](https://github.com/zekticezy/novus/releases/) for patch notes and more info.
 
+## Credits
+Novus was built with the following C libraries:
+- [Nuklear](https://github.com/Immediate-Mode-UI/Nuklear)
+- [GLFW](https://www.glfw.org/)
+
 ## Support Development
 Novus was built by me **solo**, and I want my creation to be **free**, **forever**. So, if you're interested, you can support me, my family and development by [donating here](). You don't have to, but it's be really awesome if you did! 
 
