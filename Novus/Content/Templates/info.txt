@@ -1,0 +1,2 @@
+This folder is used for Templates, which is basically what the code uses to copy from this folder, onto the end user's computer.
+It copies the structure of this folder, saves them in "template-structure.json" and the code reads it, so that it runs and copies them. Simple.

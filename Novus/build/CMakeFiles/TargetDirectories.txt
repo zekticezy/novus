@@ -1,0 +1,9 @@
+C:/Users/zm-93/Documents/GitHub/novus/Novus/build/CMakeFiles/Novus.dir
+C:/Users/zm-93/Documents/GitHub/novus/Novus/build/CMakeFiles/edit_cache.dir
+C:/Users/zm-93/Documents/GitHub/novus/Novus/build/CMakeFiles/rebuild_cache.dir
+C:/Users/zm-93/Documents/GitHub/novus/Novus/build/CMakeFiles/list_install_components.dir
+C:/Users/zm-93/Documents/GitHub/novus/Novus/build/CMakeFiles/install.dir
+C:/Users/zm-93/Documents/GitHub/novus/Novus/build/CMakeFiles/install/local.dir
+C:/Users/zm-93/Documents/GitHub/novus/Novus/build/CMakeFiles/install/strip.dir
+C:/Users/zm-93/Documents/GitHub/novus/Novus/build/CMakeFiles/Novus_autogen_timestamp_deps.dir
+C:/Users/zm-93/Documents/GitHub/novus/Novus/build/CMakeFiles/Novus_autogen.dir

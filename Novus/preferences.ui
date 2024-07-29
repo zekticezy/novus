@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Preferences</class>
+ <widget class="QDialog" name="Preferences">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>734</width>
+    <height>780</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #B2B2B2;
+</string>
+  </property>
+  <widget class="QPushButton" name="AppearanceButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #B2B2B2;
+    border: none;
+    text-align: left;
+    padding-left: 20px; /* Adjust offset as needed */
+    font-family: &quot;Josefin&quot;; /* Custom font name */
+	font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #CFCFCF;
+}
+
+QPushButton:pressed {
+    background-color: #CFCFCF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Appearance</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BackupsButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #B2B2B2;
+    border: none;
+    text-align: left;
+    padding-left: 20px; /* Adjust offset as needed */
+    font-family: &quot;Josefin&quot;; /* Custom font name */
+	font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #CFCFCF;
+}
+
+QPushButton:pressed {
+    background-color: #CFCFCF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Backups</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="DisplayButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>80</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #B2B2B2;
+    border: none;
+    text-align: left;
+    padding-left: 20px; /* Adjust offset as needed */
+    font-family: &quot;Josefin&quot;; /* Custom font name */
+	font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #CFCFCF;
+}
+
+QPushButton:pressed {
+    background-color: #CFCFCF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Display &amp; Input</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="LibraryButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>120</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #B2B2B2;
+    border: none;
+    text-align: left;
+    padding-left: 20px; /* Adjust offset as needed */
+    font-family: &quot;Josefin&quot;; /* Custom font name */
+	font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #CFCFCF;
+}
+
+QPushButton:pressed {
+    background-color: #CFCFCF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Library</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="MIDIButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>160</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #B2B2B2;
+    border: none;
+    text-align: left;
+    padding-left: 20px; /* Adjust offset as needed */
+    font-family: &quot;Josefin&quot;; /* Custom font name */
+	font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #CFCFCF;
+}
+
+QPushButton:pressed {
+    background-color: #CFCFCF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>MIDI</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PluginsButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>200</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #B2B2B2;
+    border: none;
+    text-align: left;
+    padding-left: 20px; /* Adjust offset as needed */
+    font-family: &quot;Josefin&quot;; /* Custom font name */
+	font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #CFCFCF;
+}
+
+QPushButton:pressed {
+    background-color: #CFCFCF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Plug-ins</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="DefaultsButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>240</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #B2B2B2;
+    border: none;
+    text-align: left;
+    padding-left: 20px; /* Adjust offset as needed */
+    font-family: &quot;Josefin&quot;; /* Custom font name */
+	font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #CFCFCF;
+}
+
+QPushButton:pressed {
+    background-color: #CFCFCF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Project Defaults</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="RecordingButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>280</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #B2B2B2;
+    border: none;
+    text-align: left;
+    padding-left: 20px; /* Adjust offset as needed */
+    font-family: &quot;Josefin&quot;; /* Custom font name */
+	font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #CFCFCF;
+}
+
+QPushButton:pressed {
+    background-color: #CFCFCF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Recording</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="UpdatesButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>320</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #B2B2B2;
+    border: none;
+    text-align: left;
+    padding-left: 20px; /* Adjust offset as needed */
+    font-family: &quot;Josefin&quot;; /* Custom font name */
+	font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #CFCFCF;
+}
+
+QPushButton:pressed {
+    background-color: #CFCFCF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Updates</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="AboutButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>360</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: #B2B2B2;
+    border: none;
+    text-align: left;
+    padding-left: 20px; /* Adjust offset as needed */
+    font-family: &quot;Josefin&quot;; /* Custom font name */
+	font-weight: 600;
+}
+
+QPushButton:hover {
+    background-color: #CFCFCF;
+}
+
+QPushButton:pressed {
+    background-color: #CFCFCF;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>About &amp; Credits</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Content/Content/Images/Icons/novuscenter.png</file>
+        <file>Content/Content/Images/Icons/novuscenter-selected.png</file>
+        <file>Content/Content/Images/Icons/novusblack.ico</file>
+        <file>Content/Content/Fonts/Josefin/JosefinSans-VariableFont_wght.ttf</file>
+	<file>Content/Content/Images/Logos/novus white text.png</file>
+    </qresource>
+</RCC>
