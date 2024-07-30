@@ -1,4 +1,9 @@
 ![novus white text](https://github.com/user-attachments/assets/48da7957-85d7-4f63-92b4-16c964a8e6ce)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/zekticezy/novus) ![GitHub last commit](https://img.shields.io/github/last-commit/zekticezy/novus) ![GitHub contributors](https://img.shields.io/github/contributors/zekticezy/novus) ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues-pr/zekticezy/novus) ![GitHub License](https://img.shields.io/github/license/zekticezy/novus) ![GitHub Discussions](https://img.shields.io/github/discussions/zekticezy/novus) ![GitHub Release](https://img.shields.io/github/v/release/zekticezy/novus) ![Liberapay patrons](https://img.shields.io/liberapay/patrons/zekticezy) ![Liberapay receiving](https://img.shields.io/liberapay/receives/zekticezy)
+
+
+
+
 
 Welcome to the home and official public repository of zekkie's **Novus**, a open-source [digital audio workstation](https://en.m.wikipedia.org/wiki/Digital_audio_workstation) made with C, C++ & Python. 
 
