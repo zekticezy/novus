@@ -48,6 +48,7 @@ text-align: center;
     <property name="icon">
      <iconset>
       <normalon>:/Content/Content/Images/Icons/novuscenter.png</normalon>
+      <activeon>:/Content/Content/Images/Icons/novuscenter-selected.png</activeon>
       <selectedoff>:/Content/Content/Images/Icons/novuscenter-selected.png</selectedoff>
       <selectedon>:/Content/Content/Images/Icons/novuscenter-selected.png</selectedon>
      </iconset>
@@ -55,7 +56,13 @@ text-align: center;
     <property name="checkable">
      <bool>false</bool>
     </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
     <property name="autoDefault">
+     <bool>false</bool>
+    </property>
+    <property name="default">
      <bool>false</bool>
     </property>
    </widget>
@@ -519,6 +526,24 @@ border: none;</string>
     <property name="frameShadow">
      <enum>QFrame::Shadow::Raised</enum>
     </property>
+    <widget class="QPushButton" name="NCenter">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>13</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: none;
+border: none;
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>

@@ -258,6 +258,18 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/zm-93/Documents/GitHub/novus/Novus/FileItem.h",
+			"MU",
+			"EWIEGA46WW/moc_FileItem.cpp",
+			null
+		],
+		[
+			"C:/Users/zm-93/Documents/GitHub/novus/Novus/FolderItem.h",
+			"MU",
+			"EWIEGA46WW/moc_FolderItem.cpp",
+			null
+		],
+		[
 			"C:/Users/zm-93/Documents/GitHub/novus/Novus/explorer.h",
 			"MU",
 			"EWIEGA46WW/moc_explorer.cpp",
@@ -347,6 +359,16 @@
 	"SETTINGS_FILE" : "C:/Users/zm-93/Documents/GitHub/novus/Novus/build/Desktop-Debug/CMakeFiles/Novus_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"C:/Users/zm-93/Documents/GitHub/novus/Novus/FileItem.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/zm-93/Documents/GitHub/novus/Novus/FolderItem.cpp",
+			"MU",
+			null
+		],
 		[
 			"C:/Users/zm-93/Documents/GitHub/novus/Novus/explorer.cpp",
 			"MU",

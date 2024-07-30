@@ -21,6 +21,7 @@ Novus::Novus(QWidget *parent)
     setupKey1Button();
     setupKey2Button();
     setupBPMButton();
+    setupNCenterMenu(); // Setup the NCenter menu
 
     // Set window properties
     setWindowState(Qt::WindowMaximized);
@@ -42,6 +43,68 @@ Novus::~Novus()
 {
     delete ui;
     // No need to delete explorerWidget as it's a child of Novus and will be deleted automatically
+}
+
+void Novus::setupNCenterMenu() {
+    QMenu *menu = new QMenu(this);
+
+    QAction *newProjectAction = menu->addAction("New Project");
+    newProjectAction->setShortcut(QKeySequence("Ctrl+N"));
+    connect(newProjectAction, &QAction::triggered, this, &Novus::newProject);
+
+    QAction *openProjectAction = menu->addAction("Open Project");
+    openProjectAction->setShortcut(QKeySequence("Ctrl+O"));
+    connect(openProjectAction, &QAction::triggered, this, &Novus::openProject);
+
+    QMenu *openRecentMenu = menu->addMenu("Open Recent Project");
+    // Add actions to openRecentMenu as needed
+
+    QAction *closeFileAction = menu->addAction("Close File");
+    closeFileAction->setShortcut(QKeySequence("Ctrl+Alt+C"));
+    connect(closeFileAction, &QAction::triggered, this, &Novus::closeFile);
+
+    menu->addSeparator();
+
+    QAction *addFolderAction = menu->addAction("Add Folder To Explorer...");
+    connect(addFolderAction, &QAction::triggered, this, &Novus::addFolderToExplorer);
+
+    menu->addSeparator();
+
+    QAction *saveProjectAction = menu->addAction("Save Project");
+    saveProjectAction->setShortcut(QKeySequence("Ctrl+S"));
+    connect(saveProjectAction, &QAction::triggered, this, &Novus::saveProject);
+
+    QAction *saveProjectAsAction = menu->addAction("Save Project As...");
+    saveProjectAsAction->setShortcut(QKeySequence("Ctrl+Shift+S"));
+    connect(saveProjectAsAction, &QAction::triggered, this, &Novus::saveProjectAs);
+
+    QAction *saveCopyAction = menu->addAction("Save Copy Of Project");
+    connect(saveCopyAction, &QAction::triggered, this, &Novus::saveCopyOfProject);
+
+    menu->addSeparator();
+
+    QAction *exportProjectAction = menu->addAction("Export Project");
+    exportProjectAction->setShortcut(QKeySequence("Ctrl+R"));
+    connect(exportProjectAction, &QAction::triggered, this, &Novus::exportProject);
+
+    menu->addSeparator();
+
+    QAction *preferencesAction = menu->addAction("Preferences");
+    preferencesAction->setShortcut(QKeySequence("Ctrl+P"));
+    connect(preferencesAction, &QAction::triggered, this, &Novus::preferences);
+
+    menu->addSeparator();
+
+    QAction *quitNovusAction = menu->addAction("Quit Novus");
+    quitNovusAction->setShortcut(QKeySequence("Alt+F4"));
+    connect(quitNovusAction, &QAction::triggered, this, &Novus::quitNovus);
+
+    ui->NCenter->setMenu(menu);
+}
+
+void Novus::onNCenterClicked() {
+    qDebug() << "NCenter Button Clicked";
+    // You can add any additional functionality here if needed
 }
 
 // Implementations for the actions
@@ -94,11 +157,6 @@ void Novus::preferences() {
 void Novus::quitNovus() {
     qDebug() << "Quit Novus action triggered";
     QApplication::quit();
-}
-
-void Novus::onImageButtonClicked() {
-    qDebug() << "Image Button Clicked";
-    // Implement functionality for when an image button is clicked
 }
 
 void Novus::updateBPM(int value) {

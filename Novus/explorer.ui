@@ -6,25 +6,169 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>494</width>
-    <height>453</height>
+    <width>412</width>
+    <height>686</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <widget class="QLabel" name="label">
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+	background-color: #B2B2B2;
+}</string>
+  </property>
+  <widget class="QPushButton" name="NavigationBackwardsButton">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>150</y>
-     <width>49</width>
-     <height>16</height>
+     <x>0</x>
+     <y>0</y>
+     <width>28</width>
+     <height>28</height>
     </rect>
    </property>
-   <property name="text">
-    <string>test</string>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(100, 100, 100);
+border: none;
+display: inline-block;</string>
    </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::GoPrevious"/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="NavigationFowardButton">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>0</y>
+     <width>28</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(100, 100, 100);
+border: none;
+border-color: white;
+display: inline-block;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::GoNext"/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="SearchBar">
+   <property name="geometry">
+    <rect>
+     <x>55</x>
+     <y>0</y>
+     <width>358</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(100, 100, 100);
+border-color: white;
+display: inline-block;
+padding-left: 4px;
+</string>
+   </property>
+   <property name="text">
+    <string>Search (Ctrl + F)</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>30</y>
+     <width>211</width>
+     <height>651</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="ExplorerFilesLayout"/>
+  </widget>
+  <widget class="QFrame" name="FolderFileTemplate">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>26</y>
+     <width>201</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="Icon">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>23</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: none;
+border: none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="QIcon::ThemeIcon::AudioVolumeHigh"/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Label">
+    <property name="geometry">
+     <rect>
+      <x>26</x>
+      <y>2</y>
+      <width>175</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">padding-left: 4px;
+font-weight: bold;
+color: white;</string>
+    </property>
+    <property name="text">
+     <string>Sample</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="WrappedButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>203</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: none;
+border: none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>Label</zorder>
+   <zorder>Icon</zorder>
+   <zorder>WrappedButton</zorder>
   </widget>
  </widget>
  <resources/>

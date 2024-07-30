@@ -89,6 +89,22 @@ build CMakeFiles/Novus.dir/explorer.cpp.obj: CXX_COMPILER__Novus_unscanned_Debug
   OBJECT_DIR = CMakeFiles\Novus.dir
   OBJECT_FILE_DIR = CMakeFiles\Novus.dir
 
+build CMakeFiles/Novus.dir/FileItem.cpp.obj: CXX_COMPILER__Novus_unscanned_Debug C$:/Users/zm-93/Documents/GitHub/novus/Novus/FileItem.cpp || cmake_object_order_depends_target_Novus
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Novus.dir\FileItem.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/zm-93/Documents/GitHub/novus/Novus/build/Desktop-Debug/Novus_autogen/include -isystem C:/Qt/6.7.2/mingw_64/include/QtCore -isystem C:/Qt/6.7.2/mingw_64/include -isystem C:/Qt/6.7.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.2/mingw_64/include/QtGui -isystem C:/Qt/6.7.2/mingw_64/include/QtWidgets
+  OBJECT_DIR = CMakeFiles\Novus.dir
+  OBJECT_FILE_DIR = CMakeFiles\Novus.dir
+
+build CMakeFiles/Novus.dir/FolderItem.cpp.obj: CXX_COMPILER__Novus_unscanned_Debug C$:/Users/zm-93/Documents/GitHub/novus/Novus/FolderItem.cpp || cmake_object_order_depends_target_Novus
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Novus.dir\FolderItem.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/zm-93/Documents/GitHub/novus/Novus/build/Desktop-Debug/Novus_autogen/include -isystem C:/Qt/6.7.2/mingw_64/include/QtCore -isystem C:/Qt/6.7.2/mingw_64/include -isystem C:/Qt/6.7.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.2/mingw_64/include/QtGui -isystem C:/Qt/6.7.2/mingw_64/include/QtWidgets
+  OBJECT_DIR = CMakeFiles\Novus.dir
+  OBJECT_FILE_DIR = CMakeFiles\Novus.dir
+
 build CMakeFiles/Novus.dir/Novus_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CXX_COMPILER__Novus_unscanned_Debug C$:/Users/zm-93/Documents/GitHub/novus/Novus/build/Desktop-Debug/Novus_autogen/EWIEGA46WW/qrc_resources.cpp || cmake_object_order_depends_target_Novus
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\Novus.dir\Novus_autogen\EWIEGA46WW\qrc_resources.cpp.obj.d
@@ -105,7 +121,7 @@ build CMakeFiles/Novus.dir/Novus_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CXX_C
 #############################################
 # Link the executable Novus.exe
 
-build Novus.exe: CXX_EXECUTABLE_LINKER__Novus_Debug CMakeFiles/Novus.dir/Novus_autogen/mocs_compilation.cpp.obj CMakeFiles/Novus.dir/main.cpp.obj CMakeFiles/Novus.dir/novus.cpp.obj CMakeFiles/Novus.dir/preferences.cpp.obj CMakeFiles/Novus.dir/explorer.cpp.obj CMakeFiles/Novus.dir/Novus_autogen/EWIEGA46WW/qrc_resources.cpp.obj | C$:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a || Novus_autogen Novus_autogen_timestamp_deps
+build Novus.exe: CXX_EXECUTABLE_LINKER__Novus_Debug CMakeFiles/Novus.dir/Novus_autogen/mocs_compilation.cpp.obj CMakeFiles/Novus.dir/main.cpp.obj CMakeFiles/Novus.dir/novus.cpp.obj CMakeFiles/Novus.dir/preferences.cpp.obj CMakeFiles/Novus.dir/explorer.cpp.obj CMakeFiles/Novus.dir/FileItem.cpp.obj CMakeFiles/Novus.dir/FolderItem.cpp.obj CMakeFiles/Novus.dir/Novus_autogen/EWIEGA46WW/qrc_resources.cpp.obj | C$:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a || Novus_autogen Novus_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a  C:/Qt/6.7.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

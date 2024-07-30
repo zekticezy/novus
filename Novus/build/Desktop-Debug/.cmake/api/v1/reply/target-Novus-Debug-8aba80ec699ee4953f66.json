@@ -72,13 +72,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 43,
+				"line" : 47,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 31,
+				"line" : 35,
 				"parent" : 0
 			},
 			{
@@ -310,18 +310,20 @@
 				2,
 				6,
 				10,
-				16
+				14,
+				15,
+				20
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"id" : "Novus_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "Novus_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "Novus_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "Novus::@6890427a1f51a3e7e1df",
@@ -436,7 +438,9 @@
 				2,
 				6,
 				10,
-				16
+				14,
+				15,
+				20
 			]
 		},
 		{
@@ -448,7 +452,9 @@
 				9,
 				12,
 				13,
-				14
+				16,
+				17,
+				18
 			]
 		},
 		{
@@ -459,15 +465,15 @@
 				7,
 				8,
 				11,
-				15
+				19
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				17,
-				18
+				21,
+				22
 			]
 		}
 	],
@@ -538,6 +544,28 @@
 			"backtrace" : 4,
 			"path" : "explorer.ui",
 			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "FolderItem.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "FileItem.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "FileItem.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "FolderItem.cpp",
+			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,

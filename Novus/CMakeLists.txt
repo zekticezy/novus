@@ -25,6 +25,10 @@ qt_add_executable(Novus
     preferences.ui
     resources.qrc
     explorer.h explorer.cpp explorer.ui
+    FolderItem.h
+    FileItem.h
+    FileItem.cpp
+    FolderItem.cpp
 )
 
 # Link against Qt libraries

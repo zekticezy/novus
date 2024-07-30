@@ -14,7 +14,7 @@ public:
     ~Novus();
 
 private slots:
-    void onImageButtonClicked();
+    void onNCenterClicked(); // Slot for handling NCenter button click
     void newProject();
     void openProject();
     void closeFile();
@@ -38,6 +38,7 @@ private:
     void setupKey1Button();
     void setupKey2Button();
     void setupBPMButton();
+    void setupNCenterMenu(); // Function to setup the NCenter menu
 
 protected:
     bool eventFilter(QObject *obj, QEvent *event) override;
