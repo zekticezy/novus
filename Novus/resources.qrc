@@ -5,5 +5,6 @@
         <file>Content/Content/Images/Icons/novusblack.ico</file>
         <file>Content/Content/Fonts/Josefin/JosefinSans-VariableFont_wght.ttf</file>
 	<file>Content/Content/Images/Logos/novus white text.png</file>
+	<file>Content/Content/Images/UI Elements/Light Mode/down 1.png</file>
     </qresource>
 </RCC>

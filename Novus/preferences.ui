@@ -26,13 +26,18 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <fontweight>DemiBold</fontweight>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
     background-color: #B2B2B2;
     border: none;
     text-align: left;
     padding-left: 20px; /* Adjust offset as needed */
-    font-family: &quot;Josefin&quot;; /* Custom font name */
 	font-weight: 600;
 }
 
@@ -58,13 +63,18 @@ QPushButton:pressed {
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <fontweight>DemiBold</fontweight>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
     background-color: #B2B2B2;
     border: none;
     text-align: left;
     padding-left: 20px; /* Adjust offset as needed */
-    font-family: &quot;Josefin&quot;; /* Custom font name */
 	font-weight: 600;
 }
 
@@ -90,13 +100,18 @@ QPushButton:pressed {
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <fontweight>DemiBold</fontweight>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
     background-color: #B2B2B2;
     border: none;
     text-align: left;
     padding-left: 20px; /* Adjust offset as needed */
-    font-family: &quot;Josefin&quot;; /* Custom font name */
 	font-weight: 600;
 }
 
@@ -122,13 +137,18 @@ QPushButton:pressed {
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <fontweight>DemiBold</fontweight>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
     background-color: #B2B2B2;
     border: none;
     text-align: left;
     padding-left: 20px; /* Adjust offset as needed */
-    font-family: &quot;Josefin&quot;; /* Custom font name */
 	font-weight: 600;
 }
 
@@ -154,13 +174,18 @@ QPushButton:pressed {
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <fontweight>DemiBold</fontweight>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
     background-color: #B2B2B2;
     border: none;
     text-align: left;
     padding-left: 20px; /* Adjust offset as needed */
-    font-family: &quot;Josefin&quot;; /* Custom font name */
 	font-weight: 600;
 }
 
@@ -186,13 +211,18 @@ QPushButton:pressed {
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <fontweight>DemiBold</fontweight>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
     background-color: #B2B2B2;
     border: none;
     text-align: left;
     padding-left: 20px; /* Adjust offset as needed */
-    font-family: &quot;Josefin&quot;; /* Custom font name */
 	font-weight: 600;
 }
 
@@ -218,13 +248,18 @@ QPushButton:pressed {
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <fontweight>DemiBold</fontweight>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
     background-color: #B2B2B2;
     border: none;
     text-align: left;
     padding-left: 20px; /* Adjust offset as needed */
-    font-family: &quot;Josefin&quot;; /* Custom font name */
 	font-weight: 600;
 }
 
@@ -250,13 +285,18 @@ QPushButton:pressed {
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <fontweight>DemiBold</fontweight>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
     background-color: #B2B2B2;
     border: none;
     text-align: left;
     padding-left: 20px; /* Adjust offset as needed */
-    font-family: &quot;Josefin&quot;; /* Custom font name */
 	font-weight: 600;
 }
 
@@ -282,13 +322,18 @@ QPushButton:pressed {
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <fontweight>DemiBold</fontweight>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
     background-color: #B2B2B2;
     border: none;
     text-align: left;
     padding-left: 20px; /* Adjust offset as needed */
-    font-family: &quot;Josefin&quot;; /* Custom font name */
 	font-weight: 600;
 }
 
@@ -314,13 +359,18 @@ QPushButton:pressed {
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial Black</family>
+     <fontweight>DemiBold</fontweight>
+    </font>
+   </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
     background-color: #B2B2B2;
     border: none;
     text-align: left;
     padding-left: 20px; /* Adjust offset as needed */
-    font-family: &quot;Josefin&quot;; /* Custom font name */
 	font-weight: 600;
 }
 

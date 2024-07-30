@@ -81,9 +81,9 @@ build CMakeFiles/Novus.dir/preferences.cpp.obj: CXX_COMPILER__Novus_unscanned_De
   OBJECT_DIR = CMakeFiles\Novus.dir
   OBJECT_FILE_DIR = CMakeFiles\Novus.dir
 
-build CMakeFiles/Novus.dir/SplashScreen.cpp.obj: CXX_COMPILER__Novus_unscanned_Debug C$:/Users/zm-93/Documents/GitHub/novus/Novus/SplashScreen.cpp || cmake_object_order_depends_target_Novus
+build CMakeFiles/Novus.dir/explorer.cpp.obj: CXX_COMPILER__Novus_unscanned_Debug C$:/Users/zm-93/Documents/GitHub/novus/Novus/explorer.cpp || cmake_object_order_depends_target_Novus
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\Novus.dir\SplashScreen.cpp.obj.d
+  DEP_FILE = CMakeFiles\Novus.dir\explorer.cpp.obj.d
   FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Users/zm-93/Documents/GitHub/novus/Novus/build/Desktop-Debug/Novus_autogen/include -isystem C:/Qt/6.7.2/mingw_64/include/QtCore -isystem C:/Qt/6.7.2/mingw_64/include -isystem C:/Qt/6.7.2/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.2/mingw_64/include/QtGui -isystem C:/Qt/6.7.2/mingw_64/include/QtWidgets
   OBJECT_DIR = CMakeFiles\Novus.dir
@@ -105,7 +105,7 @@ build CMakeFiles/Novus.dir/Novus_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CXX_C
 #############################################
 # Link the executable Novus.exe
 
-build Novus.exe: CXX_EXECUTABLE_LINKER__Novus_Debug CMakeFiles/Novus.dir/Novus_autogen/mocs_compilation.cpp.obj CMakeFiles/Novus.dir/main.cpp.obj CMakeFiles/Novus.dir/novus.cpp.obj CMakeFiles/Novus.dir/preferences.cpp.obj CMakeFiles/Novus.dir/SplashScreen.cpp.obj CMakeFiles/Novus.dir/Novus_autogen/EWIEGA46WW/qrc_resources.cpp.obj | C$:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a || Novus_autogen Novus_autogen_timestamp_deps
+build Novus.exe: CXX_EXECUTABLE_LINKER__Novus_Debug CMakeFiles/Novus.dir/Novus_autogen/mocs_compilation.cpp.obj CMakeFiles/Novus.dir/main.cpp.obj CMakeFiles/Novus.dir/novus.cpp.obj CMakeFiles/Novus.dir/preferences.cpp.obj CMakeFiles/Novus.dir/explorer.cpp.obj CMakeFiles/Novus.dir/Novus_autogen/EWIEGA46WW/qrc_resources.cpp.obj | C$:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a C$:/Qt/6.7.2/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a || Novus_autogen Novus_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.7.2/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.7.2/mingw_64/lib/libQt6Gui.a  C:/Qt/6.7.2/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.7.2/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -192,7 +192,7 @@ build Novus_autogen_timestamp_deps: phony
 #############################################
 # Utility command for Novus_autogen
 
-build Novus_autogen: phony CMakeFiles/Novus_autogen Novus_autogen/include/ui_projectWindow.h Novus_autogen/include/ui_preferences.h Novus_autogen/include/ui_SplashScreen.h Novus_autogen/timestamp Novus_autogen/mocs_compilation.cpp Novus_autogen_timestamp_deps
+build Novus_autogen: phony CMakeFiles/Novus_autogen Novus_autogen/include/ui_projectWindow.h Novus_autogen/include/ui_preferences.h Novus_autogen/include/ui_explorer.h Novus_autogen/timestamp Novus_autogen/mocs_compilation.cpp Novus_autogen_timestamp_deps
 
 
 #############################################
@@ -209,7 +209,7 @@ build Novus_autogen/timestamp Novus_autogen/mocs_compilation.cpp | ${cmake_ninja
 #############################################
 # Custom command for Novus_autogen\EWIEGA46WW\qrc_resources.cpp
 
-build Novus_autogen/EWIEGA46WW/qrc_resources.cpp | ${cmake_ninja_workdir}Novus_autogen/EWIEGA46WW/qrc_resources.cpp: CUSTOM_COMMAND C$:/Users/zm-93/Documents/GitHub/novus/Novus/resources.qrc CMakeFiles/Novus_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json C$:/Users/zm-93/Documents/GitHub/novus/Novus/Content/Content/Images/Logos/novus$ white$ text.png C$:/Users/zm-93/Documents/GitHub/novus/Novus/Content/Content/Images/Icons/novuscenter.png C$:/Users/zm-93/Documents/GitHub/novus/Novus/Content/Content/Images/Icons/novusblack.ico C$:/Users/zm-93/Documents/GitHub/novus/Novus/Content/Content/Images/Icons/novuscenter-selected.png C$:/Users/zm-93/Documents/GitHub/novus/Novus/Content/Content/Fonts/Josefin/JosefinSans-VariableFont_wght.ttf C$:/Qt/6.7.2/mingw_64/./bin/rcc.exe C$:/Qt/6.7.2/mingw_64/./bin/rcc.exe || Novus_autogen Novus_autogen_timestamp_deps
+build Novus_autogen/EWIEGA46WW/qrc_resources.cpp | ${cmake_ninja_workdir}Novus_autogen/EWIEGA46WW/qrc_resources.cpp: CUSTOM_COMMAND C$:/Users/zm-93/Documents/GitHub/novus/Novus/resources.qrc CMakeFiles/Novus_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json C$:/Users/zm-93/Documents/GitHub/novus/Novus/Content/Content/Images/UI$ Elements/Light$ Mode/down$ 1.png C$:/Users/zm-93/Documents/GitHub/novus/Novus/Content/Content/Images/Logos/novus$ white$ text.png C$:/Users/zm-93/Documents/GitHub/novus/Novus/Content/Content/Images/Icons/novuscenter.png C$:/Users/zm-93/Documents/GitHub/novus/Novus/Content/Content/Images/Icons/novusblack.ico C$:/Users/zm-93/Documents/GitHub/novus/Novus/Content/Content/Images/Icons/novuscenter-selected.png C$:/Users/zm-93/Documents/GitHub/novus/Novus/Content/Content/Fonts/Josefin/JosefinSans-VariableFont_wght.ttf C$:/Qt/6.7.2/mingw_64/./bin/rcc.exe C$:/Qt/6.7.2/mingw_64/./bin/rcc.exe || Novus_autogen Novus_autogen_timestamp_deps
   COMMAND = C:\Windows\system32\cmd.exe /C "cd /D C:\Users\zm-93\Documents\GitHub\novus\Novus\build\Desktop-Debug && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc C:/Users/zm-93/Documents/GitHub/novus/Novus/build/Desktop-Debug/CMakeFiles/Novus_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json Debug"
   DESC = Automatic RCC for resources.qrc
   restat = 1
@@ -218,7 +218,7 @@ build Novus_autogen/EWIEGA46WW/qrc_resources.cpp | ${cmake_ninja_workdir}Novus_a
 #############################################
 # Phony custom command for CMakeFiles\Novus_autogen
 
-build CMakeFiles/Novus_autogen Novus_autogen/include/ui_projectWindow.h Novus_autogen/include/ui_preferences.h Novus_autogen/include/ui_SplashScreen.h | ${cmake_ninja_workdir}CMakeFiles/Novus_autogen ${cmake_ninja_workdir}Novus_autogen/include/ui_projectWindow.h ${cmake_ninja_workdir}Novus_autogen/include/ui_preferences.h ${cmake_ninja_workdir}Novus_autogen/include/ui_SplashScreen.h: phony Novus_autogen/timestamp || Novus_autogen_timestamp_deps
+build CMakeFiles/Novus_autogen Novus_autogen/include/ui_projectWindow.h Novus_autogen/include/ui_preferences.h Novus_autogen/include/ui_explorer.h | ${cmake_ninja_workdir}CMakeFiles/Novus_autogen ${cmake_ninja_workdir}Novus_autogen/include/ui_projectWindow.h ${cmake_ninja_workdir}Novus_autogen/include/ui_preferences.h ${cmake_ninja_workdir}Novus_autogen/include/ui_explorer.h: phony Novus_autogen/timestamp || Novus_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.

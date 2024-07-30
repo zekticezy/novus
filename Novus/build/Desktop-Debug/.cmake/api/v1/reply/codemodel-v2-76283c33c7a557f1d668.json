@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-bd5097e73b8a6e832477.json",
+					"jsonFile" : "directory-.-Debug-80ac9a9a74592efaef5d.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Novus::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Novus-Debug-a276f28bfd1f7e0294c2.json",
+					"jsonFile" : "target-Novus-Debug-47bc9720f320e729cb0a.json",
 					"name" : "Novus",
 					"projectIndex" : 0
 				},

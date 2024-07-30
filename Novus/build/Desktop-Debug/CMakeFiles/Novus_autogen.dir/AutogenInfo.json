@@ -258,9 +258,9 @@
 	"HEADERS" : 
 	[
 		[
-			"C:/Users/zm-93/Documents/GitHub/novus/Novus/SplashScreen.h",
+			"C:/Users/zm-93/Documents/GitHub/novus/Novus/explorer.h",
 			"MU",
-			"EWIEGA46WW/moc_SplashScreen.cpp",
+			"EWIEGA46WW/moc_explorer.cpp",
 			null
 		],
 		[
@@ -348,7 +348,7 @@
 	"SOURCES" : 
 	[
 		[
-			"C:/Users/zm-93/Documents/GitHub/novus/Novus/SplashScreen.cpp",
+			"C:/Users/zm-93/Documents/GitHub/novus/Novus/explorer.cpp",
 			"MU",
 			null
 		],

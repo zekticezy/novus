@@ -1,113 +1,48 @@
 #include "novus.h"
 #include "preferences.h"
+#include "explorer.h" // Include the header file for the explorer widget
 #include <QPushButton>
 #include <QMenu>
 #include <QIcon>
 #include <QAction>
 #include <QDebug>
-
-
+#include <QScrollEvent>
+#include <QWheelEvent>
+#include <QVBoxLayout> // Include the necessary layout header
 
 Novus::Novus(QWidget *parent)
-    : QMainWindow(parent), ui(new Ui::ProjectWindow) // Ensure this matches your UI class name
+    : QMainWindow(parent), ui(new Ui::ProjectWindow), explorerWidget(new Explorer(this)) // Initialize explorerWidget
 {
     ui->setupUi(this);
     setupMenu();
+    setupWindowOptionsButton();
+    setupTimeSignatureButton();
+    setupTimelineSelectionModeButton();
+    setupKey1Button();
+    setupKey2Button();
+    setupBPMButton();
 
     // Set window properties
     setWindowState(Qt::WindowMaximized);
     setWindowTitle("Novus (Development Build)");
     setWindowIcon(QIcon(":/Content/Content/Images/Icons/novusblack.ico"));
+
+    // Check if the ProjectWidgets widget has a layout set
+    if (!ui->ProjectWidgets->layout()) {
+        // If no layout is set, create one and assign it to ProjectWidgets
+        QVBoxLayout *layout = new QVBoxLayout(ui->ProjectWidgets);
+        ui->ProjectWidgets->setLayout(layout);
+    }
+
+    // Add the Explorer widget to the ProjectWidgets frame
+    ui->ProjectWidgets->layout()->addWidget(explorerWidget);
 }
 
 Novus::~Novus()
 {
     delete ui;
+    // No need to delete explorerWidget as it's a child of Novus and will be deleted automatically
 }
-
-
-void Novus::onImageButtonClicked() {
-    QPushButton *novusCenterButton = ui->NovusCenter; // Updated button name
-    static bool isSelected = false; // Toggle state
-
-    if (isSelected) {
-        novusCenterButton->setStyleSheet("border: none; "
-                                         "background: url(:/Content/Content/Images/Icons/novuscenter.png) no-repeat center center; "
-                                         "background-size: cover;");
-    } else {
-        novusCenterButton->setStyleSheet("border: none; "
-                                         "background: url(:/Content/Content/Images/Icons/novuscenter-selected.png) no-repeat center center; "
-                                         "background-size: cover;");
-    }
-    isSelected = !isSelected;
-}
-
-void Novus::setupMenu() {
-    QMenu *menu = new QMenu(this);
-
-    // Define actions
-    QAction *newProjectAction = new QAction("New Project", this);
-    QAction *openProjectAction = new QAction("Open Project", this);
-    QAction *openRecentProjectAction = new QAction("Open Recent Project", this);
-    QAction *closeFileAction = new QAction("Close File", this);
-    QAction *addFolderAction = new QAction("Add Folder To Explorer...", this);
-    QAction *saveProjectAction = new QAction("Save Project", this);
-    QAction *saveProjectAsAction = new QAction("Save Project As...", this);
-    QAction *saveCopyAction = new QAction("Save Copy Of Project", this);
-    QAction *exportProjectAction = new QAction("Export Project", this);
-    QAction *preferencesAction = new QAction("Preferences", this);
-    QAction *quitAction = new QAction("Quit Novus", this);
-
-    // Set shortcuts
-    newProjectAction->setShortcut(QKeySequence("CTRL+N"));
-    openProjectAction->setShortcut(QKeySequence("CTRL+O"));
-    closeFileAction->setShortcut(QKeySequence("CTRL+ALT+C"));
-    saveProjectAction->setShortcut(QKeySequence("CTRL+S"));
-    saveProjectAsAction->setShortcut(QKeySequence("CTRL+SHIFT+S"));
-    exportProjectAction->setShortcut(QKeySequence("CTRL+R"));
-    preferencesAction->setShortcut(QKeySequence("CTRL+P"));
-    quitAction->setShortcut(QKeySequence("ALT+F4"));
-
-    // Connect actions to slots
-    connect(newProjectAction, &QAction::triggered, this, &Novus::newProject);
-    connect(openProjectAction, &QAction::triggered, this, &Novus::openProject);
-    connect(closeFileAction, &QAction::triggered, this, &Novus::closeFile);
-    connect(addFolderAction, &QAction::triggered, this, &Novus::addFolderToExplorer);
-    connect(saveProjectAction, &QAction::triggered, this, &Novus::saveProject);
-    connect(saveProjectAsAction, &QAction::triggered, this, &Novus::saveProjectAs);
-    connect(saveCopyAction, &QAction::triggered, this, &Novus::saveCopyOfProject);
-    connect(exportProjectAction, &QAction::triggered, this, &Novus::exportProject);
-    connect(preferencesAction, &QAction::triggered, this, &Novus::preferences);
-    connect(quitAction, &QAction::triggered, this, &Novus::quitNovus);
-
-    // Add actions to the menu
-    menu->addAction(newProjectAction);
-    menu->addAction(openProjectAction);
-
-    QMenu *recentMenu = new QMenu("Open Recent Project", this);
-    recentMenu->addAction("Recent File 1");
-    recentMenu->addAction("Recent File 2");
-    // Add more recent files as needed
-
-    menu->addMenu(recentMenu);
-    menu->addAction(closeFileAction);
-    menu->addSeparator();
-    menu->addAction(addFolderAction);
-    menu->addSeparator();
-    menu->addAction(saveProjectAction);
-    menu->addAction(saveProjectAsAction);
-    menu->addAction(saveCopyAction);
-    menu->addSeparator();
-    menu->addAction(exportProjectAction);
-    menu->addSeparator();
-    menu->addAction(preferencesAction);
-    menu->addSeparator();
-    menu->addAction(quitAction);
-
-    // Set the menu to the button
-    ui->NovusCenter->setMenu(menu); // Updated button name
-}
-
 
 // Implementations for the actions
 void Novus::newProject() {
@@ -156,8 +91,63 @@ void Novus::preferences() {
     prefsWindow->show(); // Show the window
 }
 
-
 void Novus::quitNovus() {
     qDebug() << "Quit Novus action triggered";
     QApplication::quit();
+}
+
+void Novus::onImageButtonClicked() {
+    qDebug() << "Image Button Clicked";
+    // Implement functionality for when an image button is clicked
+}
+
+void Novus::updateBPM(int value) {
+    qDebug() << "BPM Updated to:" << value;
+    // Implement functionality to update BPM
+}
+
+bool Novus::eventFilter(QObject *obj, QEvent *event) {
+    if (event->type() == QEvent::Wheel) {
+        QWheelEvent *wheelEvent = static_cast<QWheelEvent *>(event);
+        qDebug() << "Wheel event detected:" << wheelEvent->angleDelta();
+        // Implement custom handling for wheel events if needed
+        return true; // Indicate that the event has been handled
+    }
+    // Pass the event on to the base class
+    return QMainWindow::eventFilter(obj, event);
+}
+
+void Novus::setupMenu() {
+    qDebug() << "Setup Menu";
+    // Implement menu setup here
+}
+
+void Novus::setupWindowOptionsButton() {
+    qDebug() << "Setup Window Options Button";
+    // Implement window options button setup here
+}
+
+void Novus::setupTimeSignatureButton() {
+    qDebug() << "Setup Time Signature Button";
+    // Implement time signature button setup here
+}
+
+void Novus::setupTimelineSelectionModeButton() {
+    qDebug() << "Setup Timeline Selection Mode Button";
+    // Implement timeline selection mode button setup here
+}
+
+void Novus::setupKey1Button() {
+    qDebug() << "Setup Key 1 Button";
+    // Implement key 1 button setup here
+}
+
+void Novus::setupKey2Button() {
+    qDebug() << "Setup Key 2 Button";
+    // Implement key 2 button setup here
+}
+
+void Novus::setupBPMButton() {
+    qDebug() << "Setup BPM Button";
+    // Implement BPM button setup here
 }

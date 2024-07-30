@@ -15,36 +15,509 @@
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow {
-    background-color: rgb(148, 148, 148);
+	background-color: #949494;
 }
 </string>
   </property>
-  <widget class="QWidget" name="centralwidget">
+  <widget class="QWidget" name="CentralWidget">
    <widget class="QPushButton" name="NovusCenter">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>20</y>
-      <width>101</width>
-      <height>91</height>
+      <x>18</x>
+      <y>22</y>
+      <width>24</width>
+      <height>24</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
     <property name="styleSheet">
-     <string notr="true">QPushButton {
-    border: none;
-    background: url(:/images/Content/Content/Images/Icons/novuscenter.png) no-repeat center center;
-    background-size: 10px 10px; /* Set specific size */
-}
+     <string notr="true">border: none;
+background-color: #000000;
+text-align: center;
+
 </string>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normalon>:/Content/Content/Images/Icons/novuscenter.png</normalon>
+      <selectedoff>:/Content/Content/Images/Icons/novuscenter-selected.png</selectedoff>
+      <selectedon>:/Content/Content/Images/Icons/novuscenter-selected.png</selectedon>
+     </iconset>
     </property>
     <property name="checkable">
      <bool>false</bool>
     </property>
     <property name="autoDefault">
      <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="WindowOptionsButton">
+    <property name="geometry">
+     <rect>
+      <x>69</x>
+      <y>24</y>
+      <width>59</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #B5B5B5;
+border: none;
+text-decoration: none;
+display: inline-block;
+color: #000000;
+text-align: center;
+font-size: 12px;</string>
+    </property>
+    <property name="text">
+     <string>Window</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="BPMButton">
+    <property name="geometry">
+     <rect>
+      <x>133</x>
+      <y>24</y>
+      <width>56</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>SizeVerCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #B5B5B5;
+border: none;
+text-decoration: none;
+display: inline-block;
+color: #000000;
+text-align: center;
+font-size: 12px;</string>
+    </property>
+    <property name="text">
+     <string>120bpm</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TapTempoButton">
+    <property name="geometry">
+     <rect>
+      <x>191</x>
+      <y>24</y>
+      <width>34</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #B5B5B5;
+border: none;
+text-decoration: none;
+display: inline-block;
+color: #000000;
+text-align: center;
+font-size: 12px;</string>
+    </property>
+    <property name="text">
+     <string>Tap</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TimeSignatureButton">
+    <property name="geometry">
+     <rect>
+      <x>233</x>
+      <y>24</y>
+      <width>56</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #B5B5B5;
+border: none;
+text-decoration: none;
+display: inline-block;
+color: #000000;
+text-align: center;
+font-size: 12px;</string>
+    </property>
+    <property name="text">
+     <string>4/4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MetronomeButton">
+    <property name="geometry">
+     <rect>
+      <x>292</x>
+      <y>24</y>
+      <width>34</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #B5B5B5;
+border: none;
+text-decoration: none;
+display: inline-block;
+color: #000000;
+text-align: center;
+font-size: 12px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="TimelineSelectionModeButton">
+    <property name="geometry">
+     <rect>
+      <x>329</x>
+      <y>24</y>
+      <width>68</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #B5B5B5;
+border: none;
+text-decoration: none;
+display: inline-block;
+color: #000000;
+text-align: left;
+font-size: 12px;
+padding-left: 4.1px;</string>
+    </property>
+    <property name="text">
+     <string>1 Bar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MuteAudioButton">
+    <property name="geometry">
+     <rect>
+      <x>491</x>
+      <y>24</y>
+      <width>22</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #FF6666;
+border: none;
+text-decoration: none;
+display: inline-block;
+color: #000000;
+text-align: center;
+font-size: 12px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="QIcon::ThemeIcon::AudioVolumeHigh"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Key1Button">
+    <property name="geometry">
+     <rect>
+      <x>518</x>
+      <y>24</y>
+      <width>57</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #B5B5B5;
+border: none;
+text-decoration: none;
+display: inline-block;
+color: #000000;
+text-align: left;
+font-size: 12px;
+padding-left: 4.1px;</string>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Key2Button">
+    <property name="geometry">
+     <rect>
+      <x>579</x>
+      <y>24</y>
+      <width>95</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #B5B5B5;
+border: none;
+text-decoration: none;
+display: inline-block;
+color: #000000;
+text-align: left;
+font-size: 12px;
+padding-left: 4.1px;</string>
+    </property>
+    <property name="text">
+     <string>Major</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="PlayProjectButton">
+    <property name="geometry">
+     <rect>
+      <x>862</x>
+      <y>24</y>
+      <width>31</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: #949494;
+	border: none;
+	text-decoration: none;
+	display: inline-block;
+	color: #000000;
+	text-align: middle;
+	font-size: 12px;
+	transition-duration: 500ms;
+}
+
+QPushButton:hover {
+	background-color: rgb(173, 173, 173);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="QIcon::ThemeIcon::MediaPlaybackStart"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="StopProjectPlaybackButton">
+    <property name="geometry">
+     <rect>
+      <x>897</x>
+      <y>24</y>
+      <width>31</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: #949494;
+	border: none;
+	text-decoration: none;
+	display: inline-block;
+	color: #000000;
+	text-align: middle;
+	font-size: 12px;
+	transition-duration: 0.15s;
+}
+
+QPushButton:hover {
+	background-color: rgb(173, 173, 173);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="QIcon::ThemeIcon::MediaPlaybackStop"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="RecordInProjectButton">
+    <property name="geometry">
+     <rect>
+      <x>932</x>
+      <y>24</y>
+      <width>31</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>-1</pointsize>
+      <underline>false</underline>
+      <strikeout>false</strikeout>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	background-color: #949494;
+	border: none;
+	text-decoration: none;
+	display: inline-block;
+	color: #000000;
+	text-align: middle;
+	font-size: 14px;
+	transition-duration: 0.15s;
+}
+
+QPushButton:hover {
+	background-color: rgb(173, 173, 173);
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset theme="QIcon::ThemeIcon::MediaRecord"/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="NCDropdownButton">
+    <property name="geometry">
+     <rect>
+      <x>42</x>
+      <y>22</y>
+      <width>24</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: none;
+border: none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normalon>:/Content/Content/Images/UI Elements/Light Mode/down 1.png</normalon>
+     </iconset>
+    </property>
+   </widget>
+   <widget class="QFrame" name="ProjectWidgets">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>67</y>
+      <width>1906</width>
+      <height>961</height>
+     </rect>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QFrame" name="TopBar">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>10</y>
+      <width>1906</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
     </property>
    </widget>
   </widget>

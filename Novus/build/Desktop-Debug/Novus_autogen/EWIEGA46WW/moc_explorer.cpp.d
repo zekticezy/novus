@@ -1,4 +1,4 @@
-C:/Users/zm-93/Documents/GitHub/novus/Novus/build/Desktop-Debug/Novus_autogen/EWIEGA46WW/moc_novus.cpp: C:/Users/zm-93/Documents/GitHub/novus/Novus/novus.h \
+C:/Users/zm-93/Documents/GitHub/novus/Novus/build/Desktop-Debug/Novus_autogen/EWIEGA46WW/moc_explorer.cpp: C:/Users/zm-93/Documents/GitHub/novus/Novus/explorer.h \
   C:/Users/zm-93/Documents/GitHub/novus/Novus/build/Desktop-Debug/Novus_autogen/moc_predefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.2/mingw_64/include/QtCore/q20memory.h \
@@ -142,16 +142,12 @@ C:/Users/zm-93/Documents/GitHub/novus/Novus/build/Desktop-Debug/Novus_autogen/EW
   C:/Qt/6.7.2/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.2/mingw_64/include/QtGui/qwindowdefs_win.h \
-  C:/Qt/6.7.2/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/QWidget \
-  C:/Qt/6.7.2/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qsizepolicy.h \
-  C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
   C:/Qt/6.7.2/mingw_64/include/QtWidgets/qwidget.h \
-  C:/Users/zm-93/Documents/GitHub/novus/Novus/explorer.h \
   C:/msys64/mingw64/include/_mingw.h \
   C:/msys64/mingw64/include/_mingw_mac.h \
   C:/msys64/mingw64/include/_mingw_off_t.h \

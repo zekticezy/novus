@@ -1,6 +1,7 @@
 #include "preferences.h"
 #include "ui_preferences.h"
 #include <QFontDatabase>
+#include <QDebug>
 
 Preferences::Preferences(QWidget *parent) :
     QDialog(parent),
@@ -54,6 +55,12 @@ Preferences::Preferences(QWidget *parent) :
     ui->PluginsButton->setStyleSheet(buttonStyle);
     ui->RecordingButton->setStyleSheet(buttonStyle);
     ui->UpdatesButton->setStyleSheet(buttonStyle);
+
+    // Set the window title
+    setWindowTitle("Preferences");
+
+    // Remove the icon from the top bar
+    setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
 }
 
 Preferences::~Preferences()

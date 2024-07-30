@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "ui_projectWindow.h" // Adjust this if your UI header file has a different name
+#include "explorer.h" // Include the header file for the explorer widget
 
 class Novus : public QMainWindow
 {
@@ -24,10 +25,22 @@ private slots:
     void exportProject();
     void preferences();
     void quitNovus();
+    void updateBPM(int value);
 
 private:
     Ui::ProjectWindow *ui; // Ensure this matches your UI class name
+    Explorer *explorerWidget; // Pointer to the explorer widget
+
     void setupMenu();
+    void setupWindowOptionsButton();
+    void setupTimeSignatureButton();
+    void setupTimelineSelectionModeButton();
+    void setupKey1Button();
+    void setupKey2Button();
+    void setupBPMButton();
+
+protected:
+    bool eventFilter(QObject *obj, QEvent *event) override;
 };
 
 #endif // NOVUS_H

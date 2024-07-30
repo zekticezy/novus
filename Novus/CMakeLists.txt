@@ -14,8 +14,6 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-
-
 # Add your executable and include the resources file
 qt_add_executable(Novus
     main.cpp
@@ -25,10 +23,8 @@ qt_add_executable(Novus
     preferences.h
     preferences.cpp
     preferences.ui
-    splashscreen.ui
     resources.qrc
-    SplashScreen.h
-    SplashScreen.cpp
+    explorer.h explorer.cpp explorer.ui
 )
 
 # Link against Qt libraries
